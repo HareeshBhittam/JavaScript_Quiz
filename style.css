@@ -1,0 +1,76 @@
+:root{
+    --color1 : #FF9E9E;
+    --color2 : #FFCAC8;
+    --color3 : #F8F988;
+    --color4 : #2b2730;
+}
+
+body {
+    margin: 1rem auto;
+    padding: 3rem;
+    font-family: sans-serif;
+    background-color: var(--color4);
+}
+header {
+    width: 50%;
+    margin: 1em auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color3);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+
+}
+main {
+    min-width: 25rem;
+    max-width: 50%;
+    margin: 0px auto;
+    display:flex; 
+    flex-direction: column;
+}
+#statement {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px var(--color2);
+    padding: 1rem;
+    font-size: x-large;
+    text-align: center;
+    margin: 1rem 0px;
+    min-height: 2em;
+    background-color: var(--color1);
+    color: white;
+
+}
+
+#score{
+    font-family: Verdana;
+    text-transform: uppercase;
+}
+#explanation {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+#options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+button {
+    padding: 0.5rem;
+    font-size: medium;
+    border-radius: 5px;
+}
+.correct {
+    background-color: rgb(10, 246, 10);
+}
+.incorrect {
+    background-color: rgb(255, 0, 38);
+}
+.hidden {
+    display: none;
+    
+}
+

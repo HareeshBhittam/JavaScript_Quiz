@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Quiz </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1> JavaScript Quiz</h1>
+        <div id="score">
+            Score: <span id="correct">0</span> / <span id="completed">1</span>
+        </div>
+    </header>
+
+    <main>
+        <div id="statement">Strings in JS are editable values</div>
+        <div id="options">
+            <button name="true" value="true">TRUE</button>
+            <button name="false" value="false" class="">FALSE</button>
+        </div>
+        <div id="explanation" class="hidden">Brendan Eich created JS at Netscape in 1995. The initial version of the language was written in just 10 days.</div>
+        <button id="next-question" name="next-question" disabled="">Next Question</button>
+    </main>
+
+</body>
+</html>
