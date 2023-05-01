@@ -58,6 +58,7 @@ button {
   padding: 0.5rem;
   font-size: medium;
   border-radius: 5px;
+  cursor:pointer;
 }
 .correct {
   background-color: rgb(10, 246, 10);
