@@ -67,6 +67,69 @@ const facts = [
   },
 ];
 
+facts.push(
+  {
+    statement: "typeof NaN === 'number'",
+    answer: 'true',
+    explanation: 'Despite being "Not a Number", NaN is of type number in JavaScript.',
+  },
+  {
+    statement: "[] == ![]",
+    answer: 'true',
+    explanation:
+      "[] is truthy, but when compared using `==`, coercion makes it `'' == false`, which is true due to type conversion rules.",
+  },
+  {
+    statement: "'5' - 2 === 3",
+    answer: 'true',
+    explanation:
+      "In JavaScript, the `-` operator triggers numeric coercion, so '5' becomes 5 and 5 - 2 equals 3.",
+  },
+  {
+    statement: "'5' + 2 === 7",
+    answer: 'false',
+    explanation:
+      "The `+` operator triggers string concatenation when one operand is a string, so '5' + 2 === '52'.",
+  },
+  {
+    statement: "null == undefined",
+    answer: 'true',
+    explanation:
+      "In loose equality (==), null and undefined are equal to each other and only each other.",
+  },
+  {
+    statement: "let x = {}; let y = {}; x === y",
+    answer: 'false',
+    explanation:
+      "Two distinct object literals are not equal by reference, even if they have identical contents.",
+  },
+  {
+    statement: "typeof function(){} === 'object'",
+    answer: 'false',
+    explanation:
+      "Functions are a special type in JavaScript. `typeof function() {}` returns 'function'.",
+  },
+  {
+    statement: "isNaN('hello') === true",
+    answer: 'true',
+    explanation:
+      "`isNaN('hello')` returns true because 'hello' cannot be coerced into a valid number.",
+  },
+  {
+    statement: "!!null === false",
+    answer: 'true',
+    explanation:
+      "`!!null` converts null to its boolean equivalent, which is false.",
+  },
+  {
+    statement: "console.log(0.1 + 0.2 === 0.3)",
+    answer: 'false',
+    explanation:
+      "Due to floating point precision issues, 0.1 + 0.2 is not exactly equal to 0.3 in JavaScript.",
+  }
+);
+
+
 function hide(element) {
   element.classList.add('hidden');
 }
